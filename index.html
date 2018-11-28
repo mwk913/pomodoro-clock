@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pomodoro Clock</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="clock_wrap">
+      <h1 class="clock-header"><strong>Pomodoro Clock</strong></h1>
+      <div id="top">
+          <div id="top-session"><h2>Session</h2></div>
+          <div id="top-session-mins"><h2>25</h2></div>
+          <div id="top-break"><h2>Break</h2></div>
+          <div id="top-break-mins"><h2>5</h2></div>
+          <div class="left-minus"><i class="fas fa-minus"></i></div>
+          <div class="left-plus"><i class="fas fa-plus"></i></div>
+          <div class="right-minus"></i><i class="fas fa-plus"></i></div>
+          <div class="right-plus"><i class="fas fa-minus"></i></div>
+      </div>
+      <div id="bottom">
+          <div class="play" onclick="startTimer()"()"><i class="fas fa-play"></i></div>
+          <div class="refresh" onclick="refreshTimer()"><i class="fas fa-sync-alt"></i></div> 
+          <div id="bottom-session"><h1>Session</h1></div>
+          <div id="countdown">
+            <p id="timer"><span class="minutes"></span><span class="seconds"></span></p>
+          </div>
+          <div class="pause" onclick="pauseTimer()"><i class="fas fa-pause"></i></div>
+          <div class="stop" onclick="stopTimer()"><i class="fas fa-stop"></i></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
