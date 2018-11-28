@@ -17,6 +17,8 @@ function convertSeconds(time){
 function Timer(){
   counter++;
   document.getElementById('timer').innerHTML = convertSeconds(timeleft - counter);
+  endTime(); // ends on 0 time
+  
 }
 
 function startTimer(){
@@ -35,15 +37,33 @@ function pauseTimer(){
 
 function stopTimer(){
   clearInterval(x)
-  updateTimer();
+  resetTimer();
 }
 
-function updateTimer(){
+function resetTimer(){
   counter = 0;
   timerMins = 25; 
   timeleft = 60 * timerMins;
   document.getElementById('timer').innerHTML = convertSeconds(timeleft - counter);
 }
+
+function endTime(){
+  if ((timeleft-counter) <= 3 && (timeleft-counter) >= 1){
+    playSound();
+  }else if ((timeleft-counter) === 0){
+    clearInterval(x);
+    alert("break time");
+    }
+}
+
+function playSound(){
+  audio = document.querySelector('audio')
+  audio.currentTime = 0;
+  audio.play();
+}
+
+
+
 
 
 

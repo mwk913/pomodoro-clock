@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <audio id="sound" src="sounds/openhat.wav"></audio>
   <div id="container">
     <div id="clock_wrap">
       <h1 class="clock-header"><strong>Pomodoro Clock</strong></h1>
@@ -27,10 +28,10 @@
       </div>
       <div id="bottom">
           <div class="play" onclick="startTimer()"()"><i class="fas fa-play"></i></div>
-          <div class="refresh" onclick="refreshTimer()"><i class="fas fa-sync-alt"></i></div> 
+          <div class="refresh"><i class="fas fa-sync-alt"></i></div> 
           <div id="bottom-session"><h1>Session</h1></div>
           <div id="countdown">
-            <p id="timer"><span class="minutes"></span><span class="seconds"></span></p>
+            <p id="timer"></p>
           </div>
           <div class="pause" onclick="pauseTimer()"><i class="fas fa-pause"></i></div>
           <div class="stop" onclick="stopTimer()"><i class="fas fa-stop"></i></div>
