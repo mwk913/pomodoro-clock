@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
-  background-color:lightslategrey;
+  background-color:rgb(151, 175, 197);
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -181,8 +181,8 @@ h2 {
 
 #bottom-session {
   position: absolute;
-  top: 25px;
-  left: 160px;
+  top: 30px;
+  left: 165px;
   width: 100px;
   height: 50px;
   color:white;

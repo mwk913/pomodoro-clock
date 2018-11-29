@@ -18,18 +18,18 @@
       <h1 class="clock-header"><strong>Pomodoro Clock</strong></h1>
       <div id="top">
           <div id="top-session"><h2>Session</h2></div>
-          <div id="top-session-mins"><h2>25</h2></div>
+          <div id="top-session-mins"><h2></h2></div>
           <div id="top-break"><h2>Break</h2></div>
-          <div id="top-break-mins"><h2>5</h2></div>
-          <div class="left-minus"><i class="fas fa-minus"></i></div>
-          <div class="left-plus"><i class="fas fa-plus"></i></div>
-          <div class="right-minus"></i><i class="fas fa-plus"></i></div>
-          <div class="right-plus"><i class="fas fa-minus"></i></div>
+          <div id="top-break-mins"><h2></h2></div>
+          <div class="left-minus" onclick="subTimerMins()"><i class="fas fa-minus"></i></div>
+          <div class="left-plus" onclick="addTimerMins()"><i class="fas fa-plus"></i></div>
+          <div class="right-minus" onclick="subBreakMins()"></i><i class="fas fa-plus"></i></div>
+          <div class="right-plus" onclick="addBreakMins()"><i class="fas fa-minus"></i></div>
       </div>
       <div id="bottom">
-          <div class="play" onclick="startTimer()"()"><i class="fas fa-play"></i></div>
-          <div class="refresh"><i class="fas fa-sync-alt"></i></div> 
-          <div id="bottom-session"><h1>Session</h1></div>
+          <div class="play" onclick="startTimer()"><i class="fas fa-play"></i></div>
+          <div class="refresh" onclick="refreshSession()"><i class="fas fa-sync-alt"></i></div> 
+          <div id="bottom-session"><h1 id="bottom-session1">Session</h1></div>
           <div id="countdown">
             <p id="timer"></p>
           </div>
