@@ -32,6 +32,7 @@ function Timer(){
 function startTimer(){
   if (counter == 0 || pause == true){
     x = setInterval(Timer, 1000)
+    document.getElementById('timer').style.color ="green";
   }else{
     return;
   }
@@ -42,6 +43,7 @@ function startTimer(){
 
 function pauseTimer(){
   pause = true;
+  document.getElementById('timer').style.color = "white"
   clearInterval(x)
 }
 
@@ -50,6 +52,7 @@ function stopTimer(){
   breakMins = 5;
   document.getElementById("top-session-mins").innerHTML = timerMins;
   document.getElementById("top-break-mins").innerHTML = breakMins;
+  document.getElementById('timer').style.color = "white"
   clearInterval(x)
   resetTimer();
   document.getElementById('bottom-session1').innerHTML = "Session"
@@ -65,6 +68,7 @@ function resetTimer(){
 
 function endTime(){
   if ((timeleft-counter) <= 3 && (timeleft-counter) >= 1){
+    document.getElementById('timer').style.color = "red"
     playSound();
   }else if ((timeleft-counter) === 0){
     getBreakDisplay();
@@ -121,6 +125,7 @@ function getBreakDisplay(){
     startTimer();
     sessionReset = true;
   }else{
+    document.getElementById('timer').style.color="white";
     clearInterval(x)
     refreshSession();
   }

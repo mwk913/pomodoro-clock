@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
-  background-color:rgb(151, 175, 197);
+  background-color:rgb(219, 223, 219);
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -17,11 +17,14 @@ h2 {
   position: relative;
 }
 .clock-header{
-  color: rgb(26, 26, 26);
+  color: rgb(230, 38, 38);
   font-size: 3em;
   margin: 10px;
 }
 
+.timer-buttons:hover{
+  font-size: 1.1em;
+}
 #top-session-mins {
   color:white;
   position: absolute;
@@ -45,15 +48,17 @@ h2 {
 #top{
   width: 450px;
   height: 120px;
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   position: relative;
-  border-radius: 15px
+  border-radius: 15px;
+  box-shadow: 3px 3px 6px black;
+  -moz-box-shadow: 3px 3px 6px  black;
 }
 
 #bottom {
   height: 265px;
   width: 450px;
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   margin-top: 20px;
   text-align: center;
   position: relative;
@@ -166,7 +171,7 @@ h2 {
 }
 
 .fas:hover {
-  color: orangered;
+  color: rgb(219, 48, 48);
 }
 
 #top-session {
