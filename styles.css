@@ -63,6 +63,8 @@ h2 {
   text-align: center;
   position: relative;
   border-radius: 15px;
+  box-shadow: 3px 3px 6px black;
+  -moz-box-shadow: 3px 3px 6px  black;
 }
 
 #clock_wrap{
